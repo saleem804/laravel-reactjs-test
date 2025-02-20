@@ -1,0 +1,25 @@
+Docker Setup Documentation for Backend and Frontend
+
+Prerequisites
+Docker Compose installed
+
+Clone project from below github repository: 
+git clone https://github.com/saleem804/laravel-reactjs-test.git
+
+Backend Setup (Laravel) with docker
+
+1. Open terminal at this folder: laravel-reactjs-test
+2. Run command : cd backend
+3. Run below command to setup laravel API environment: 
+	docker-compose up -d --build
+
+Frontend Setup (reactjs/typscript) with docker
+1. Open terminal at this folder: laravel-reactjs-test
+2. Run command : cd frontend
+3. Run below command to setup reactjs/typscript app: 
+	docker-compose up -d --build
+4. Open the url in browser: http://localhost:3000
+5. Signup new user.
+6. Login that user.
+7. Go to preferences menu and Save Preferences.
+8. Check News feed and News Article filtering.

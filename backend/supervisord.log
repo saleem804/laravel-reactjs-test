@@ -1,0 +1,12 @@
+2025-02-20 19:07:49,053 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2025-02-20 19:07:49,057 INFO supervisord started with pid 1
+2025-02-20 19:07:50,062 INFO spawned: 'laravel_scheduler' with pid 8
+2025-02-20 19:07:50,093 WARN exited: laravel_scheduler (exit status 1; not expected)
+2025-02-20 19:07:51,097 INFO spawned: 'laravel_scheduler' with pid 9
+2025-02-20 19:07:51,114 WARN exited: laravel_scheduler (exit status 1; not expected)
+2025-02-20 19:07:53,117 INFO spawned: 'laravel_scheduler' with pid 10
+2025-02-20 19:07:53,133 WARN exited: laravel_scheduler (exit status 1; not expected)
+2025-02-20 19:07:56,138 INFO spawned: 'laravel_scheduler' with pid 11
+2025-02-20 19:07:56,154 WARN exited: laravel_scheduler (exit status 1; not expected)
+2025-02-20 19:07:57,156 INFO gave up: laravel_scheduler entered FATAL state, too many start retries too quickly
+2025-02-20 19:13:17,551 WARN received SIGTERM indicating exit request
