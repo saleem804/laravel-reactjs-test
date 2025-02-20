@@ -28,3 +28,7 @@
 - Login that user.
 - Go to preferences menu and Save Preferences.
 - Check News feed and News Article filtering.
+
+## Common issues while running docker container
+- This application need these port to run : port:8000, and port=3000
+- If any of the port is already in use, stop docker using:`docker-compose down` free ports and up docker again. 
