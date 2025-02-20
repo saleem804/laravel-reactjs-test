@@ -6,7 +6,7 @@ WORKDIR /var/www
 
 # Install system dependencies
 RUN apt-get update && apt-get install -y \
-    libpq-dev unzip supervisor \
+    libpq-dev unzip \
     && docker-php-ext-install pdo pdo_mysql
 
 # Install Composer
@@ -16,10 +16,7 @@ COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 COPY . .
 
 # Install PHP dependencies
-RUN composer install --no-dev --optimize-autoloader
-
-# Copy Supervisor configuration
-COPY docker/supervisor/supervisord.conf /etc/supervisor/conf.d/supervisord.conf
+RUN composer install
 
 # Copy startup script
 COPY docker/startup.sh /usr/local/bin/startup.sh
