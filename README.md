@@ -4,6 +4,7 @@
 - Docker Compose installed
 
 ## Clone project from below github repository: 
+```bash
 git clone https://github.com/saleem804/laravel-reactjs-test.git
 
 ## Backend Setup (Laravel) with docker
@@ -11,12 +12,14 @@ git clone https://github.com/saleem804/laravel-reactjs-test.git
 - Open terminal at this folder: laravel-reactjs-test
 - Run command : cd backend
 - Run below command to setup laravel API environment: 
+```bash
 	docker-compose up -d --build
 
 ## Frontend Setup (reactjs/typscript) with docker
 - Open terminal at this folder: laravel-reactjs-test
 - Run command : cd frontend
-- Run below command to setup reactjs/typscript app: 
+- Run below command to setup reactjs/typscript app:
+```bash 
 	docker-compose up -d --build
 - Open the url in browser: http://localhost:3000
 
